@@ -444,17 +444,20 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   .menu-toggle{display:flex}
   .nav{display:none}
 
-  /* Header */
+  /* Header - Logo left, Menu right (swap for RTL) */
   .h-top{display:none}
-  .h-main{flex-wrap:nowrap;gap:12px;padding:12px 16px}
+  .h-main{flex-wrap:nowrap;gap:12px;padding:12px 16px;flex-direction:row-reverse}
   .h-top-inner{padding-left:16px;padding-right:16px}
   .logo img{height:38px}
-  .h-actions{gap:8px}
+  .h-actions{gap:8px;flex-direction:row-reverse}
   .h-actions .h-btn{display:none}
   .search-wrap{width:auto;flex:1;max-width:200px}
   .search-wrap input{padding:8px 36px 8px 12px;font-size:15px}
   .search-wrap input:focus{width:100%}
   .search-wrap .mi{font-size:20px;left:10px}
+
+  /* Headings +20% */
+  h1,h2,h3,h4,h5,h6{font-size:120%}
 
   /* Hero */
   .hero{padding:0 16px}
@@ -466,11 +469,11 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   .crumb{font-size:13px;padding:12px 0 4px;gap:4px}
   .crumb .mi{font-size:16px}
 
-  /* Article header */
+  /* Article header - headings +20% */
   .a-header{padding:14px 0}
   .a-cat{font-size:13px;padding:4px 10px}
   .a-cat .mi{font-size:16px!important}
-  .a-title{font-size:1.6rem;line-height:2}
+  .a-title{font-size:2rem;line-height:2}
   .a-excerpt{font-size:1.1rem;line-height:2.2;margin-bottom:16px;padding-bottom:16px}
 
   /* Author row */
@@ -489,10 +492,10 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   .tool-gap{display:none}
   .font-c button{width:28px;height:28px;font-size:13px}
 
-  /* Article body */
+  /* Article body - preserve desktop font */
   .a-body{padding-bottom:24px}
-  .a-body p{font-size:1.05rem;line-height:2.4;margin-bottom:16px}
-  .a-body h3{font-size:1.3rem;margin:24px 0 12px;padding-right:14px}
+  .a-body p{font-family:var(--font-b);line-height:2.4;margin-bottom:16px}
+  .a-body h3{font-size:1.56rem;margin:24px 0 12px;padding-right:14px}
   .a-body h3::before{width:3px}
   .quote{padding:18px 16px 18px 18px;margin:24px 0;border-radius:0 var(--r) var(--r) 0}
   .quote::before{font-size:50px;top:-2px;right:10px}
@@ -519,20 +522,20 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   .bio{flex-direction:column;text-align:center;gap:16px;padding:24px 20px;margin:24px 0;border-radius:var(--rl)}
   .bio::before{height:4px;width:100%;right:0;top:0}
   .bio-avatar{width:64px;height:64px;font-size:32px;border-radius:16px}
-  .bio-info h3{font-size:1.2rem}
+  .bio-info h3{font-size:1.44rem}
   .bio-info .role{font-size:14px}
-  .bio-info p{font-size:15px;line-height:1.8}
+  .bio-info p{font-family:var(--font-b);line-height:1.8}
   .bio-follow{font-size:14px;padding:6px 16px}
   .bio-follow .mi{font-size:17px}
 
-  /* Sidebar */
+  /* Sidebar - headings +20% */
   .side{margin-top:8px}
   .s-card{padding:18px;margin-bottom:16px;border-radius:var(--r)}
-  .s-title{font-size:17px;margin-bottom:14px;padding-bottom:10px}
+  .s-title{font-size:20px;margin-bottom:14px;padding-bottom:10px}
   .s-title .mi{font-size:22px}
   .t-item{padding:10px 0}
   .t-num{font-size:24px;min-width:28px}
-  .t-item h4{font-size:14px;line-height:1.7}
+  .t-item h4{font-size:17px;line-height:1.7}
   .t-item .time{font-size:12px}
   .t-item .time .mi{font-size:14px}
   .rs-item{gap:10px;padding:10px 0}
@@ -540,17 +543,17 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   .rs-body h4{font-size:14px;line-height:1.6}
   .rs-body .time{font-size:12px}
   .nl-card{padding:22px 18px;border-radius:var(--r)}
-  .nl-card h4{font-size:17px}
-  .nl-card p{font-size:14px;margin-bottom:12px}
+  .nl-card h4{font-size:20px}
+  .nl-card p{font-family:var(--font-b);margin-bottom:12px}
   .nl-input{flex-direction:column;gap:8px}
   .nl-input input{padding:10px 12px;font-size:15px}
   .nl-input button{padding:10px 14px;font-size:14px}
 
-  /* Related section */
+  /* Related section - headings +20% */
   .related{padding:36px 0}
   .related .wrap{padding:0 16px}
   .sec-h{margin-bottom:20px;flex-wrap:wrap;gap:10px}
-  .sec-h h2{font-size:1.4rem}
+  .sec-h h2{font-size:1.68rem}
   .sec-h h2 .bar{width:3px;height:24px}
   .sec-h a{font-size:14px}
   .sec-h a .mi{font-size:18px}
@@ -559,19 +562,19 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   .card-img img{height:180px}
   .card-img .cat{top:10px;right:10px;font-size:12px;padding:3px 10px}
   .card-b{padding:16px 18px}
-  .card-b h3{font-size:1.15rem;line-height:1.7;margin-bottom:4px}
-  .card-b p{font-size:14px;line-height:1.8;margin-bottom:12px}
+  .card-b h3{font-size:1.38rem;line-height:1.7;margin-bottom:4px}
+  .card-b p{font-family:var(--font-b);line-height:1.8;margin-bottom:12px}
   .card-foot{font-size:13px;padding-top:10px}
   .card-av{width:24px;height:24px;font-size:12px;border-radius:6px}
   .card-foot .mi{font-size:16px}
 
-  /* Comments */
+  /* Comments - headings +20%, preserve paragraph font */
   .comments{padding:32px 16px 40px}
-  .c-head{font-size:1.3rem;margin-bottom:20px}
+  .c-head{font-size:1.56rem;margin-bottom:20px}
   .c-head .mi{font-size:26px}
   .c-head .badge{font-size:12px;padding:2px 8px}
   .c-form{margin-bottom:28px;border-radius:var(--r)}
-  .c-form textarea{padding:14px 16px;font-size:1rem;min-height:90px}
+  .c-form textarea{padding:14px 16px;font-family:var(--font-b);min-height:90px}
   .c-form-foot{padding:8px 14px}
   .c-form-foot .hint{font-size:12px}
   .c-form-foot .hint .mi{font-size:17px}
@@ -582,24 +585,24 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   .c-av{width:38px;height:38px;font-size:16px;border-radius:10px}
   .c-name{font-size:15px}
   .c-time{font-size:12px}
-  .c-body{font-size:1rem;line-height:2.2;margin-bottom:8px}
+  .c-body{font-family:var(--font-b);line-height:2.2;margin-bottom:8px}
   .c-actions{gap:10px}
   .c-act{font-size:12px;padding:3px 6px}
   .c-act .mi{font-size:16px}
   .c-reply{margin-right:20px;padding-top:2px}
   .c-reply .c-item{padding:12px 14px;border-radius:8px}
 
-  /* Footer */
+  /* Footer - headings +20%, preserve paragraph font */
   .footer{padding:36px 0 0}
   .footer .wrap{padding:0 16px}
   .f-grid{grid-template-columns:1fr 1fr;gap:20px}
   .f-brand{grid-column:1/-1;text-align:center}
   .f-brand img{margin:0 auto 10px}
-  .f-brand p{max-width:100%;font-size:15px}
+  .f-brand p{max-width:100%;font-family:var(--font-b)}
   .f-social{justify-content:center;margin-top:14px}
   .f-social a{width:34px;height:34px;border-radius:8px}
   .f-social svg{width:14px;height:14px}
-  .f-col h4{font-size:16px;margin-bottom:12px;padding-bottom:8px}
+  .f-col h4{font-size:19px;margin-bottom:12px;padding-bottom:8px}
   .f-col h4::after{width:20px;height:2px}
   .f-col a{font-size:14px;padding:3px 0}
   .f-bottom{padding:14px 0;font-size:13px}
@@ -640,15 +643,15 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   /* Breadcrumb */
   .crumb{font-size:12px;padding:10px 0 2px}
 
-  /* Article */
+  /* Article - headings +20%, preserve font */
   .a-header{padding:12px 0}
-  .a-title{font-size:1.4rem;line-height:1.9}
-  .a-excerpt{font-size:1rem;line-height:2}
-  .a-body p{font-size:1rem;line-height:2.2}
-  .a-body h3{font-size:1.2rem}
+  .a-title{font-size:1.8rem;line-height:1.9}
+  .a-excerpt{font-family:var(--font-b);line-height:2}
+  .a-body p{font-family:var(--font-b);line-height:2.2}
+  .a-body h3{font-size:1.44rem}
   .quote{padding:14px 12px 14px 14px}
   .quote::before{font-size:40px;right:8px}
-  .quote p{font-size:1.1rem!important}
+  .quote p{font-family:var(--font-b)}
 
   /* Tools */
   .tools{gap:4px}
@@ -664,13 +667,13 @@ body{opacity:0;animation:pageIn .6s .1s var(--ease-out) forwards}
   /* Bio */
   .bio{padding:20px 16px}
   .bio-avatar{width:56px;height:56px;font-size:28px}
-  .bio-info h3{font-size:1.1rem}
-  .bio-info p{font-size:14px}
+  .bio-info h3{font-size:1.32rem}
+  .bio-info p{font-family:var(--font-b)}
 
   /* Related */
   .card-img img{height:160px}
   .card-b{padding:14px 16px}
-  .card-b h3{font-size:1.1rem}
+  .card-b h3{font-size:1.32rem}
 
   /* Comments */
   .c-head{font-size:1.2rem}
