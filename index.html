@@ -6,7 +6,9 @@
 <title>ދިވެހިޚަބަރު — ރާއްޖޭގެ އެންމެ އިތުބާރު ހިފޭ ޚަބަރު</title>
 <style>
 /* ══════════ FONTS ══════════ */
+/* fallback */
 @font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2')}
+.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased}
 .mi{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;vertical-align:middle}
 
 /* Faruma - primary Thaana font (same as adhadhu.com) */
@@ -34,10 +36,11 @@
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--font-b);background:var(--white);color:var(--g700);font-size:1.2rem;font-weight:400;line-height:2.6;direction:rtl;text-align:right;-webkit-font-smoothing:antialiased;overflow-x:hidden;letter-spacing:var(--ls);opacity:0;animation:pageIn .5s .1s var(--ease-out) forwards}
+body{font-family:'Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--white);color:var(--g700);font-size:1.2rem;font-weight:400;line-height:2.6;direction:rtl;text-align:right;-webkit-font-smoothing:antialiased;overflow-x:hidden;letter-spacing:var(--ls);opacity:0;animation:pageIn .5s .1s var(--ease-out) forwards}
 @keyframes pageIn{to{opacity:1}}
 h1,h2,h3,h4,h5,h6{font-family:var(--font-h);line-height:2.2;letter-spacing:var(--ls-w);color:var(--black);font-weight:normal}
-a{text-decoration:none;color:inherit;transition:color .2s}img{display:block;max-width:100%}button{cursor:pointer;border:none;background:none;font-family:inherit}
+p,span,div,li,td,th,label,textarea,input{font-family:'Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif}
+a{text-decoration:none;color:inherit;transition:color .2s;font-family:inherit}img{display:block;max-width:100%}button{cursor:pointer;border:none;background:none;font-family:inherit}
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--g300);border-radius:10px}
 
 /* ══════════ FLOATING SOCIAL ══════════ */
