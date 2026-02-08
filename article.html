@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ރިސޯޓުތަކެއް ތަރައްގީކޮށް، ކޮންމެ ދިވެއްސަކަށް ޑޮލަރު ދެނީ</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link href="https://cdn.jsdelivr.net/gh/nicefunfun/thaanafonts@master/faruma.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+<link href="https://cdn.jsdelivr.net/gh/nicefunfun/thaanafonts@master/waheed.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 <link href="https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 <style>
 /* ══════════════════════════════════════════
@@ -19,9 +19,12 @@
 /* ══════════════════════════════════════════
    THAANA FONTS
    ══════════════════════════════════════════ */
-/* Faruma - primary Thaana font (same as adhadhu.com) */
-@font-face{font-family:'Faruma';font-weight:400;font-style:normal;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/nicefunfun/thaanafonts@master/faruma.woff2') format('woff2'),url('https://cdn.jsdelivr.net/gh/kudanai/Thaana-OSX@master/Library/Fonts/Faruma.ttf') format('truetype'),url('https://raw.githubusercontent.com/kudanai/Thaana-OSX/master/Library/Fonts/Faruma.ttf') format('truetype')}
+/* MV Waheed - for paragraph/body text */
 @font-face{font-family:'MV Waheed';font-weight:400;font-style:normal;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/nicefunfun/thaanafonts@master/waheed.woff2') format('woff2'),url('https://cdn.jsdelivr.net/gh/kudanai/Thaana-OSX@master/Library/Fonts/MV%20Waheed.otf') format('opentype')}
+/* MV Faseyha - for headings */
+@font-face{font-family:'MV Faseyha';font-weight:400;font-style:normal;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/kudanai/Thaana-OSX@master/Library/Fonts/MV%20Faseyha.otf') format('opentype')}
+/* Faruma - fallback */
+@font-face{font-family:'Faruma';font-weight:400;font-style:normal;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/nicefunfun/thaanafonts@master/faruma.woff2') format('woff2'),url('https://cdn.jsdelivr.net/gh/kudanai/Thaana-OSX@master/Library/Fonts/Faruma.ttf') format('truetype')}
 
 /* ══════════════════════════════════════════
    ROOT & RESET
@@ -34,9 +37,9 @@
   --g400:#94a3b8;--g500:#64748b;--g600:#475569;--g700:#334155;
   --g800:#1e293b;--g900:#0f172a;--black:#0a0a0a;
   --red-50:#eef4fb;--red-100:#d4e4f4;--red-200:#a8c8e8;
-  --font-h:'MV Waheed','Faruma','MV Boli',Tahoma,sans-serif;
-  --font-b:'Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
-  --font-display:'MV Waheed','Faruma','MV Boli',Tahoma,sans-serif;
+  --font-h:'MV Faseyha','MV Waheed','Faruma','MV Boli',Tahoma,sans-serif;
+  --font-b:'MV Waheed','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
+  --font-display:'MV Faseyha','MV Waheed','Faruma','MV Boli',Tahoma,sans-serif;
   --font-en:'Georgia','Times New Roman',serif;
   --font-sys:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
   --ls:0;--ls-w:0;
@@ -51,9 +54,9 @@
 
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
-body{font-family:'Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--white);color:var(--g700);font-size:1.2rem;font-weight:400;line-height:2.6;direction:rtl;text-align:right;min-width:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;letter-spacing:var(--ls)}
-h1,h2,h3,h4,h5,h6{font-family:var(--font-h);line-height:2.2;letter-spacing:var(--ls-w);color:var(--black);font-weight:normal}
-p,span,div,li,td,th,label,textarea,input{font-family:'Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif}
+body{font-family:'MV Waheed','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--white);color:var(--g700);font-size:1.2rem;font-weight:400;line-height:2.6;direction:rtl;text-align:right;min-width:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;letter-spacing:var(--ls)}
+h1,h2,h3,h4,h5,h6{font-family:'MV Faseyha','MV Waheed','Faruma','MV Boli',Tahoma,sans-serif;line-height:2.2;letter-spacing:var(--ls-w);color:var(--black);font-weight:normal}
+p,span,div,li,td,th,label,textarea,input{font-family:'MV Waheed','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif}
 a{text-decoration:none;color:inherit;transition:color .2s ease;font-family:inherit}
 img{display:block;max-width:100%}
 button{cursor:pointer;border:none;background:none;font-family:inherit}
