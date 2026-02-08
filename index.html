@@ -14,9 +14,9 @@
 .material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased}
 .mi{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;vertical-align:middle}
 
-/* MV Waheed - for paragraph/body text */
+/* MV Waheed - for headings */
 @font-face{font-family:'MV Waheed';font-weight:400;font-style:normal;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/nicefunfun/thaanafonts@master/waheed.woff2') format('woff2'),url('https://cdn.jsdelivr.net/gh/kudanai/Thaana-OSX@master/Library/Fonts/MV%20Waheed.otf') format('opentype')}
-/* MV Faseyha - for headings */
+/* MV Faseyha - for paragraph/body text */
 @font-face{font-family:'MV Faseyha';font-weight:400;font-style:normal;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/kudanai/Thaana-OSX@master/Library/Fonts/MV%20Faseyha.otf') format('opentype')}
 /* Faruma - fallback */
 @font-face{font-family:'Faruma';font-weight:400;font-style:normal;font-display:swap;src:url('https://cdn.jsdelivr.net/gh/nicefunfun/thaanafonts@master/faruma.woff2') format('woff2'),url('https://cdn.jsdelivr.net/gh/kudanai/Thaana-OSX@master/Library/Fonts/Faruma.ttf') format('truetype')}
@@ -29,9 +29,9 @@
   --g400:#94a3b8;--g500:#64748b;--g600:#475569;--g700:#334155;
   --g800:#1e293b;--g900:#0f172a;--black:#0a0a0a;
   --red-50:#eef4fb;--red-100:#d4e4f4;--red-200:#a8c8e8;
-  --font-h:'MV Faseyha','MV Waheed','Faruma','MV Boli',Tahoma,sans-serif;
-  --font-b:'MV Waheed','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
-  --font-display:'MV Faseyha','MV Waheed','Faruma','MV Boli',Tahoma,sans-serif;
+  --font-h:'MV Waheed','MV Faseyha','Faruma','MV Boli',Tahoma,sans-serif;
+  --font-b:'MV Faseyha','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
+  --font-display:'MV Waheed','MV Faseyha','Faruma','MV Boli',Tahoma,sans-serif;
   --font-en:'Georgia',serif;--font-sys:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
   --ls:0;--ls-w:0;
   --ease:cubic-bezier(.25,.46,.45,.94);--ease-out:cubic-bezier(.16,1,.3,1);
@@ -42,10 +42,10 @@
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'MV Waheed','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--white);color:var(--g700);font-size:1.2rem;font-weight:400;line-height:2.6;direction:rtl;text-align:right;-webkit-font-smoothing:antialiased;overflow-x:hidden;letter-spacing:var(--ls);opacity:0;animation:pageIn .5s .1s var(--ease-out) forwards}
+body{font-family:'MV Faseyha','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--white);color:var(--g700);font-size:1.2rem;font-weight:400;line-height:2.6;direction:rtl;text-align:right;-webkit-font-smoothing:antialiased;overflow-x:hidden;letter-spacing:var(--ls);opacity:0;animation:pageIn .5s .1s var(--ease-out) forwards}
 @keyframes pageIn{to{opacity:1}}
-h1,h2,h3,h4,h5,h6{font-family:'MV Faseyha','MV Waheed','Faruma','MV Boli',Tahoma,sans-serif;line-height:2.2;letter-spacing:var(--ls-w);color:var(--black);font-weight:normal}
-p,span,div,li,td,th,label,textarea,input{font-family:'MV Waheed','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif}
+h1,h2,h3,h4,h5,h6{font-family:'MV Waheed','MV Faseyha','Faruma','MV Boli',Tahoma,sans-serif;line-height:2.2;letter-spacing:var(--ls-w);color:var(--black);font-weight:normal}
+p,span,div,li,td,th,label,textarea,input{font-family:'MV Faseyha','Faruma','MV Boli',Tahoma,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif}
 a{text-decoration:none;color:inherit;transition:color .2s;font-family:inherit}img{display:block;max-width:100%}button{cursor:pointer;border:none;background:none;font-family:inherit}
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--g300);border-radius:10px}
 
